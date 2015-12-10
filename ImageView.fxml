@@ -7,18 +7,20 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="216.0" prefWidth="246.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ImageViewController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="216.0" prefWidth="246.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ImageViewController">
   <children>
-    <ImageView fx:id="myImage" fitHeight="150.0" fitWidth="200.0" layoutX="24.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="myImage" fitHeight="150.0" fitWidth="200.0" layoutX="54.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@Dog.jpg" />
       </image>
     </ImageView>
-    <RadioButton fx:id="dogRadioButton" layoutX="73.0" layoutY="184.0" mnemonicParsing="false" onAction="#dogRadioButtonListener" selected="true" text="Dog">
-      <toggleGroup>
-        <ToggleGroup fx:id="myToggleGroup" />
-      </toggleGroup>
-    </RadioButton>
-    <RadioButton fx:id="catRadioButton" layoutX="131.0" layoutY="184.0" mnemonicParsing="false" onAction="#catRadioButtonListener" text="Cat" toggleGroup="$myToggleGroup" />
+      <Button layoutX="79.0" layoutY="350.0" mnemonicParsing="false" text="Full Screen" />
+      <Button layoutX="-113.0" layoutY="95.0" mnemonicParsing="false" text="Previous" />
+      <Button layoutX="283.0" layoutY="95.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="71.0" text="Next" />
+      <Button layoutX="57.0" layoutY="265.0" mnemonicParsing="false" text="Play" />
+      <Button layoutX="143.0" layoutY="265.0" mnemonicParsing="false" text="Stop" />
+      <Button layoutX="33.0" layoutY="-79.0" mnemonicParsing="false" text="Zoom in" />
+      <Button layoutX="143.0" layoutY="-79.0" mnemonicParsing="false" text="Zoom Out" />
+      <RadioButton layoutX="82.0" layoutY="193.0" mnemonicParsing="false" text="Favourtie" />
   </children>
 </AnchorPane>
